@@ -1,0 +1,18 @@
+{
+  "name": "secret-santa-server",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "prod-start": "env=PROD node ./bin/www > stdout.txt 2> stderr.txt &",
+    "find-ps": "netstat -ltnp | grep -w ':3001'"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "dotenv": "^6.1.0",
+    "express": "~4.16.0",
+    "morgan": "~1.9.0",
+    "nodemailer": "^4.7.0"
+  }
+}
