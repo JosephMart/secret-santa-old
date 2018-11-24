@@ -1,3 +1,7 @@
+<p align="center">
+    <img height="300px" src="https://raw.githubusercontent.com/JosephMart/secret-santa/master/client/src/logo.svg?sanitize=true">
+</p>
+
 # Secret Santa Generator
 
 This apps automates the process of coming up with the [Secret Santa](https://en.wikipedia.org/wiki/Secret_Santa) matching and keeps it discrete.
