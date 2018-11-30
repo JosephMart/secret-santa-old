@@ -8,7 +8,7 @@ const genMatches = require('./routes/genMatches');
 
 const app = express();
 
-console.log(process.env.env === "PROD");
+console.log(`Production: ${process.env.env === "PROD"}`);
 
 app.use(logger('dev'));
 app.use(express.json());
