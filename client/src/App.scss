@@ -1,7 +1,7 @@
 $background-color: #282c34;
-$mainColor: rgb(129,154,169);
-$bg: rgb(226,229,230);
-$crimson: rgb(243,109,102);
+$mainColor: rgb(129, 154, 169);
+$bg: rgb(226, 229, 230);
+$crimson: rgb(243, 109, 102);
 
 @font-face {
   font-family: 'MerryChristmasStar';
@@ -61,46 +61,49 @@ SVG {
     transform: rotate(360deg);
   }
 }
+
 #SantaForm {
-  text-align:center;
+  text-align: center;
   table-layout: fixed;
 
   input[type=text] {
     width: 100%;
     box-sizing: border-box;
     font-size: 1.2em;
-    outline:none;
+    outline: none;
     letter-spacing: 0.05em;
     background-color: $background-color;
     border: none;
     text-align: center;
     color: #ffffff;
     font-family: 'WarmSnow', 'sans-serif';
-    border-bottom: solid 2px rgba(255,255,255,0.1);
+    border-bottom: solid 2px rgba(255, 255, 255, 0.1);
 
   }
 }
+
 // Form
-table{
+table {
   //width:100%;
   table-layout: fixed;
-  width:70%;
-  margin-left:15%;
-  margin-right:15%;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
+
 @media (max-width: 768px) {
   table {
-    width:100%;
-    margin-left:0;
+    width: 100%;
+    margin-left: 0;
     margin-right: 0;
   }
 }
 
-.tbl-header{
-  background-color: rgba(255,255,255,0.3);
+.tbl-header {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
-.tbl-content{
+.tbl-content {
   //height:150px;
   //overflow-x:auto;
   margin-top: 0;
@@ -109,7 +112,7 @@ table{
 
 th {
   padding: 20px 15px;
-  vertical-align:middle;
+  vertical-align: middle;
   text-align: center;
   font-weight: 500;
   font-size: 19px;
@@ -118,7 +121,7 @@ th {
 
 td {
   padding: 15px;
-  vertical-align:middle;
+  vertical-align: middle;
   text-align: center;
   font-weight: 300;
   font-size: 12px;
@@ -140,7 +143,7 @@ td {
   }
 }
 
-section{
+section {
   //margin: 50px;
 }
 
@@ -152,9 +155,10 @@ section{
 
 .add-row {
   padding: 0;
+
   &:hover {
     //color: #8E1F17;
-    background-color: rgba(255,255,255,0.3);
+    background-color: rgba(255, 255, 255, 0.3);
     cursor: pointer;
   }
 }
@@ -162,11 +166,13 @@ section{
 ::-webkit-scrollbar {
   width: 6px;
 }
+
 ::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
+
 ::-webkit-scrollbar-thumb {
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
 // Button
@@ -180,26 +186,25 @@ section{
 .button {
   cursor: pointer;
   display: inline-block;
-  -webkit-box-sizing:border-box;
-  -moz-box-sizing:border-box;
-  box-sizing:border-box;
-  min-width:100px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  min-width: 100px;
   padding: 22px 33px;
   font-family: 'WarmSnow', 'sans-serif';
   font-size: 26px;
   line-height: 26px;
   text-decoration: none;
   color: #FFF;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.75);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.75);
   background: #5e0d0c;
   outline: none;
   border-radius: 15px;
   border: 1px solid #4c0300;
-  box-shadow:
-          inset 1px 1px 0px rgba(255,255,255,0.25), /* highlight */
-          inset 0 0 6px #a23227, /* inner glow */
-          inset 0 80px 80px -40px #ac3223, /* gradient */
-          1px 1px 3px rgba(0,0,0,0.75); /* shadow */
+  box-shadow: inset 1px 1px 0px rgba(255, 255, 255, 0.25), /* highlight */
+  inset 0 0 6px #a23227, /* inner glow */
+  inset 0 80px 80px -40px #ac3223, /* gradient */
+  1px 1px 3px rgba(0, 0, 0, 0.75); /* shadow */
 
   position: relative;
   overflow: visible; /* IE9 & 10 */
@@ -222,25 +227,26 @@ section{
   url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAXCAYAAACFxybfAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAodJREFUeNrsVb1rWlEUv2pN/GqspKRSKFYXWzEloIWif0Fn6dJChQ7OQil0qd3EzcEpg0OgdHDr4CQODk7VRlLMEIVqApX4We0zflR9/Z1Ui4T34ksaaAYP/Hzc673n/M6550PG8zz73yKjn0wm83fDYDAwo9HINBrNnwOQg4MDs0ql2lQqlfdAWont7ng8Pjw+Ps44nc4G1pI9EXWaSOzt7TGO42aH5Pv7+08ajUZ0MBiUeXEZd7vdL5VK5fX29rZ+5tQiEmdxKrlcjsEYczgcynK5/BKKv/IXFNz/XiqVXkHdjUuRIA9SqdRD8or/R8Ez9fr9fqHVakUR4c2z0REjIQuHw2ZcrPBXLCA0RHTezEdHjIQqkUhEr9I4HOILhQLf6/VoOUFEvDMiQiToDx1Cdz+bzZ6bUFarlel0OkkVUK/XWbvdPoVer5fh3ntsfwJ+CJ2XA4p0Op1bpBgJyxDehQQ6nQ5DZXHBYDBZq9V+EhFUndnr9drEqoc2bwJbwGPgtohuVSwWe2Gz2TZMJpNgRKi6qtUqg2EWj8dTgUDgo0KhWPN4PC70EvXOzs67fD6/S6kiRIKeZA1YJ2MiJNbdbvfTUCjkV6vVK2hcDF8GI2w0GrGTkxM2HA5PDxaLxSOfz/cWEfk81X0XIMMFgJJ/srBjCgk8IdcfuVyuZ36//7nFYtkQyAMumUzuRiKRD0jMFLa+AZOpYwqgB/ziBVqmVBKUO7eAB/R0WG/Z7XaTVqtdbTabHJL6EK2djBaBPHA0NSqpbUsiMUeEBgpF4Q5AbZrmSJ/yEWgBTaBNHl9kdkgmMUeG7qwAq9PqovceTA3zlxlgsuswyuXsGsiSxJLEkoSY/BZgAEjRodi+uBruAAAAAElFTkSuQmCC) no-repeat 100% 0;
 
 }
+
 .button:hover {
   background: #a61715;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.75), 0 0 40px #FFF;
-  box-shadow:
-          inset 1px 1px 0px rgba(255,255,255,0.25), /* highlight */
-          inset 0 0 6px #da3b2c, /* inner glow */
-          inset 0 80px 80px -40px #dd4330, /* gradient */
-          1px 1px 3px rgba(0,0,0,0.75); /* shadow */
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.75), 0 0 40px #FFF;
+  box-shadow: inset 1px 1px 0px rgba(255, 255, 255, 0.25), /* highlight */
+  inset 0 0 6px #da3b2c, /* inner glow */
+  inset 0 80px 80px -40px #dd4330, /* gradient */
+  1px 1px 3px rgba(0, 0, 0, 0.75); /* shadow */
 
 }
+
 .button:focus {
   outline: none; /*FF*/
 }
+
 .button:active {
-  box-shadow:
-          inset 1px 1px 0px rgba(255,255,255,0.25), /* highlight */
-          inset 0 0 6px #da3b2c, /* inner glow */
-          inset 0 80px 80px -40px #dd4330, /* gradient */
-          0px 1px 0px rgba(255,255,255,0.25); /* shadow */
+  box-shadow: inset 1px 1px 0px rgba(255, 255, 255, 0.25), /* highlight */
+  inset 0 0 6px #da3b2c, /* inner glow */
+  inset 0 80px 80px -40px #dd4330, /* gradient */
+  0px 1px 0px rgba(255, 255, 255, 0.25); /* shadow */
 
   -webkit-transition: 50ms linear;
   -moz-transition: 50ms linear;
@@ -255,6 +261,7 @@ section{
   height: 100%;
   display: table;
 }
+
 .centerer {
   display: table-cell;
   vertical-align: middle;
@@ -275,10 +282,12 @@ span {
   right: auto;
   transform: translateX(-50%) translateY(-50%);
   text-align: center;
+
   a {
     color: #000000;
     text-decoration: none;
   }
+
   .fa {
     color: #E90606;
     margin: 0 3px;

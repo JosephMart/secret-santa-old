@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Secret Santa",
+  "name": "Secret Santa Generator",
   "icons": [
     {
       "src": "favicon.ico",
@@ -10,6 +10,7 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "description": "This apps automates the process of coming up with the Secret Santa matching and keeps it discrete",
+  "theme_color": "#F36D66",
+  "background_color": "#282c34"
 }
