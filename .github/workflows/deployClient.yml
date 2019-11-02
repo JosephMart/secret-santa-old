@@ -26,11 +26,12 @@ jobs:
           npm run build --if-present
         env:
           CI: true
-      - name: Deploy to server
-        uses: maddox/actions/ssh@master
-        env:
-          PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
-          HOST: ${{ secrets.HOST }}
-          USER: ${{ secrets.USER }}
+      - name: SCP Command to Transfer Files
+        uses: appleboy/scp-action@v0.0.4
         with:
-          args: touch howdy.txt
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USER }}
+          key: ${{ secrets.PRIVATE_KEY }}
+          port: 22
+          source: "README.md"
+          target: "~/"
