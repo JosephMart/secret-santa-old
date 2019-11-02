@@ -1,4 +1,4 @@
-name: Secret Santa Server
+name: Deploy Secret Santa Server
 
 on:
   push:
@@ -11,7 +11,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12.x, 13.x]
+        node-version: [13.x]
 
     steps:
       - uses: actions/checkout@v1
