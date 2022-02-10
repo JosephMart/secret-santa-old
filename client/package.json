@@ -6,7 +6,7 @@
   "homepage": "https://r0s.io/santa",
   "dependencies": {
     "@blueprintjs/core": "^3.19.1",
-    "node-sass": "^4.13.0",
+    "node-sass": "^7.0.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-modal": "^3.11.1",
